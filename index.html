@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<title>Farm Bazaar</title>
+    
+    <head>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    
+    <body class="bg">
+        <div class="headercontaner">
+           <div class="topnav">
+                 <input type="text" placeholder="Search for the Product">
+               <button class="search">Search</button>
+               <a class="head" href="#home">Farm Bazaar</a>
+                <a href="#contact" >More</a>
+               <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#contact">Products</a>
+               <a  href="#home">Home</a>
+            </div>
+        </div>
+        
+        
+        <div class="productsheader">
+                <div class="products" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn">Vegetables
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+<a href="#">Corn</a>
+<a href="#">Mushroom</a>
+<a href="#">Broccoli</a>
+<a href="#">Cucumber</a>
+<a href="#">Red pepper/red bell pepper</a>
+<a href="#">Pineapple</a>
+<a href="#">Tomato</a>
+<a href="#">Swede/rutabaga (U.S.)</a>
+<a href="#">Carrot</a>
+<a href="#">Brussels sprout</a>
+<a href="#">Pumpkin</a>
+<a href="#">Cabbage</a>
+<a href="#">Potato</a>
+<a href="#">Eggplant</a>
+<a href="#">Sweet potato</a>
+<a href="#">Turnip</a>
+<a href="#">Courgette (U.K.)/zucchini (U.S.)</a>
+<a href="#">Green chilli</a>
+<a href="#">Onion</a>
+<a href="#">Lettuce</a>
+<a href="#">Radish</a>
+<a href="#">Pea</a>
+<a href="#">Asparagus</a>
+<a href="#">Celery</a>
+<a href="#">Green pepper</a>
+<a href="#">French beans</a>
+<a href="#">Spinach</a>
+<a href="#">Beetroot/beet (U.S.)</a>
+<a href="#">Red chillies/red chili peppers (U.S.)</a>
+<a href="#">Bean</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Fruits
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Grains
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Spices
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Dry Fruits
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Dairy Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                     <div class="dropdown">
+    <button class="dropbtn">Mycart
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Wishlist</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+        </div>
+        
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://amp.thenational.ae/image/policy:1.261574:1499419181/image/jpeg.jpg?f=16x9&w=1200&$p$f$w=dfa40e8" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://opinion.bdnews24.com/wp-content/uploads/2017/11/indian-farmers-1170x660.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://www.thebetterindia.com/wp-content/uploads/2017/06/BhoomeeFarmer.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+        
+        <!-- card -->
+        <div class="container">
+        <h2> Freshly Arrived</h2>
+        <div class="row" >
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://3.imimg.com/data3/HP/JY/MY-9473396/totapuri-mangoes-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Tota Puri Mangoese</h3>
+        <h5>75rs/kg</h5>
+        </div>
+        </div> 
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://fsb.zobj.net/crop.php?r=nBluE2m2IOoMXi_m4kXMdLPyd1_ic_4H_7co4c7gT9AaIIqDSp7y_dexjTsrg1Y7wlxM13HiP7z_AxbNNLR8vSPlEPirMHZNHWqAdfKeRbOO2IofedRQuOhkJPY3EZaXqfB0Fcak_ehfJVev" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Alphonso Mangoese</h3>
+        <h5>250rs/kg</h5>
+        </div>    
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://images.herzindagi.info/image/2019/Apr/tips-to-buy-mangoes.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <h3>Malghoba Mangoese</h3>
+        <h5>110rs/kg</h5>
+        </div>
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://4.imimg.com/data4/YY/YY/GLADMIN-/https-www-ar4mangoes-com-wp-content-uploads-2016-08-banginpally-img-n-300x266-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Banginapalli Mangoese</h3>
+        <h5>175rs/kg</h5>
+        </div>
+        </div>
+            
+        </div>
+        </div>
+        
+         <div class="container">
+        <div class="row" >
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://3.imimg.com/data3/HP/JY/MY-9473396/totapuri-mangoes-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Tota Puri Mangoese</h3>
+        <h5>75rs/kg</h5>
+        </div>
+        </div> 
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://fsb.zobj.net/crop.php?r=nBluE2m2IOoMXi_m4kXMdLPyd1_ic_4H_7co4c7gT9AaIIqDSp7y_dexjTsrg1Y7wlxM13HiP7z_AxbNNLR8vSPlEPirMHZNHWqAdfKeRbOO2IofedRQuOhkJPY3EZaXqfB0Fcak_ehfJVev" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Alphonso Mangoese</h3>
+        <h5>250rs/kg</h5>
+        </div>    
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://images.herzindagi.info/image/2019/Apr/tips-to-buy-mangoes.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <h3>Malghoba Mangoese</h3>
+        <h5>110rs/kg</h5>
+        </div>
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://4.imimg.com/data4/YY/YY/GLADMIN-/https-www-ar4mangoes-com-wp-content-uploads-2016-08-banginpally-img-n-300x266-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Banginapalli Mangoese</h3>
+        <h5>175rs/kg</h5>
+        </div>
+        </div>
+            
+        </div>
+        </div>
+         <div class="container">
+        <div class="row" >
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://3.imimg.com/data3/HP/JY/MY-9473396/totapuri-mangoes-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Tota Puri Mangoese</h3>
+        <h5>75rs/kg</h5>
+        </div>
+        </div> 
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://fsb.zobj.net/crop.php?r=nBluE2m2IOoMXi_m4kXMdLPyd1_ic_4H_7co4c7gT9AaIIqDSp7y_dexjTsrg1Y7wlxM13HiP7z_AxbNNLR8vSPlEPirMHZNHWqAdfKeRbOO2IofedRQuOhkJPY3EZaXqfB0Fcak_ehfJVev" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Alphonso Mangoese</h3>
+        <h5>250rs/kg</h5>
+        </div>    
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://images.herzindagi.info/image/2019/Apr/tips-to-buy-mangoes.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <h3>Malghoba Mangoese</h3>
+        <h5>110rs/kg</h5>
+        </div>
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://4.imimg.com/data4/YY/YY/GLADMIN-/https-www-ar4mangoes-com-wp-content-uploads-2016-08-banginpally-img-n-300x266-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Banginapalli Mangoese</h3>
+        <h5>175rs/kg</h5>
+        </div>
+        </div>
+            
+        </div>
+        </div>
+         <div class="container">
+        <div class="row" >
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://3.imimg.com/data3/HP/JY/MY-9473396/totapuri-mangoes-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Tota Puri Mangoese</h3>
+        <h5>75rs/kg</h5>
+        </div>
+        </div> 
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://fsb.zobj.net/crop.php?r=nBluE2m2IOoMXi_m4kXMdLPyd1_ic_4H_7co4c7gT9AaIIqDSp7y_dexjTsrg1Y7wlxM13HiP7z_AxbNNLR8vSPlEPirMHZNHWqAdfKeRbOO2IofedRQuOhkJPY3EZaXqfB0Fcak_ehfJVev" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Alphonso Mangoese</h3>
+        <h5>250rs/kg</h5>
+        </div>    
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://images.herzindagi.info/image/2019/Apr/tips-to-buy-mangoes.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <h3>Malghoba Mangoese</h3>
+        <h5>110rs/kg</h5>
+        </div>
+        </div>
+            
+        <div class= "col-md-3 col-sm-3 col-xs-3">
+        <div class="product-top">
+        <img src="https://4.imimg.com/data4/YY/YY/GLADMIN-/https-www-ar4mangoes-com-wp-content-uploads-2016-08-banginpally-img-n-300x266-250x250.jpg" width="30%">
+        <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="Quick Shop">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+        <i class="fa fa-heart-o " aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>   
+        <div class="product-bottom text-center">
+        <i class="fa fa-star" ></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <h3>Banginapalli Mangoese</h3>
+        <h5>175rs/kg</h5>
+        </div>
+        </div>
+            
+        </div>
+        </div>
+        
+        <div class="footer">
+            <div class="row">
+                
+                <div class="column">
+                    <div class="footerwidget">
+                        <h2 class="widgetheading">About Us</h2>
+                        <p>With more than 15 years of experience we can proudly say that we are one of the best in business, a trusted supplier for more than 1000 companies...</p>
+                        <p href="#">show more</p>
+                    </div>
+                </div>
+                 <div class="column">
+                    <div class="footerwidget">
+                        <h2 class="widgetheading">Information</h2>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Delivery Information</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conditions</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                 <div class="column">
+                    <div class="footerwidget">
+                        <h2 class="widgetheading">Reach Us</h2>
+                          <div class="social">
+                                <i class="fa fa-twitter" ></i>
+                                <i class="fa fa-facebook" ></i>
+                                <i class="fa fa-instagram" ></i>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </div>
+                        
+                         <h2 class="widgetheading">Payment Modes</h2>
+                          <div class="social">
+                               <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                                <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                              <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        </div>
+        
+        
+        <div class="footerbottom">
+            <div class="row">
+        <div class="copyright">
+            <p>Copyright ©2020 FarmBazaar - All Rights Reserved.</p>
+        </div>
+                <div class="contact">
+            <p>Contact Us</p>
+        </div>
+                <div class="privicy">
+            <p>Privicy Policy</p>
+        </div>
+        </div>
+        </div>
+    
+    </body>
+    
+<script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1000); // Change image every 1 seconds
+}
+    </script>
+
+
+
+
+
+
+</html>

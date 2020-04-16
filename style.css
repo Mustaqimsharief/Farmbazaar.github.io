@@ -1,0 +1,423 @@
+  /* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:greenyellow;
+    color: #000;   
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+    margin-left: 2px;
+font-family: sans-serif;
+    font-weight: bold;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the a.head inside the navigation bar */
+.topnav a.head{
+  color: black;
+  font-family : cursive;
+  float: left;
+  padding-left: 25px;
+  border: none;
+  margin-top: 5px;
+margin-bottom: 5px;
+  margin-left: 55px;
+  font-size: 25px;
+    font-weight:bolder;
+}
+        
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: center;
+  padding-left: 200px;
+  border: insert;
+  margin-top: 15px;
+  margin-left: 150px;
+  font-size: 17px;
+}
+        /* search */
+.search {
+  border-color: #000;
+  color: black;
+    background-color: white;
+}
+
+.search:hover {
+  background: #FF6347;
+}
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+    
+        /* Add a black background color to the top navigation */
+.products {
+  background-color:#2E8B57;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.products .a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.products .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left:25px;
+
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 35px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkseagreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.products a:hover, .dropdown:hover .dropbtn {
+  background-color: #0f0;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .products a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .products a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .products.responsive {position: relative;}
+  .products.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .products.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .products.responsive .dropdown {float: none;}
+  .products.responsive .dropdown-content {position: relative;}
+  .products.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+        
+        
+        * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+        /*product cars details*/
+.container{
+    width: 100%;
+    margin-top: 5%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+   
+}
+
+.container h2{
+    background-color:#32CD32;
+    color: #fff;
+    width: 200px;
+    font-size: 24px;
+    padding: 5px;
+    height: 40px;
+}
+.container h2::after{
+    content:'';
+    border-top:40px solid #0062cc;
+    border-right: 40px solid transparent;
+    position: relative;
+    left:48px;
+    top: 34px;
+}
+
+.row{
+    width: 30%;
+    margin-top: 30px;
+}
+
+.container img{
+    width: 100%;
+    height:200px;
+}
+.product-bottom .fa{
+    color: #28a745;
+    font-size: 10px;
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom h5{
+    font-size:15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.overlay
+{
+    display:block;
+    opacity;0;
+   position:absolute;
+   top: 10%;
+    margin-left: 0;
+    width:70px;
+}
+.product-top:hover.overlay
+{
+    opacity:1;
+    margin-left: 5%;
+    transition:0.5s;
+}
+
+.overlay .fa
+{
+    cursor:pointer;
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay .btn-secondary{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.row{
+    width: 100%;
+}
+/*footer */
+.footer
+{
+    background-color: darkslategrey;
+    width: 100%;
+    margin-left: 25px;
+}
+ 
+.footerwidget{
+    margin-left: 25px;
+    width:80%;
+    color: aliceblue
+}
+
+.column{
+    width: 30%;
+}
+
+.widgetheading{
+    margin-top: 10px;
+}
+.social .fa{
+    margin-left: 10px;}
+    
+/*footer bottom*/
+
+.footerbottom
+{
+    background-color: #000;
+    color: aliceblue;
+    height: 25px;
+}
+
+    .footerbottom .row
+{
+    margin-left: 15px;
+}
+  .footerbottom .contact
+{
+    
+    margin-left: 700px;
+}
+  .footerbottom .privicy
+{
+    margin-left: 15px;
+}
+
+    
